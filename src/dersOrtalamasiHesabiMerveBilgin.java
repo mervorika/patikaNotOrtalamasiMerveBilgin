@@ -4,6 +4,7 @@ public class dersOrtalamasiHesabiMerveBilgin {
     public static void main(String[] args) {
 
         int muzik, tarih, kimya, turkce, matematik, fizik;
+        String gecti, kaldi, durum;
         double sonuc;
 
         Scanner inp = new Scanner(System.in);
@@ -28,8 +29,9 @@ public class dersOrtalamasiHesabiMerveBilgin {
 
         int toplam = (muzik + tarih + kimya + turkce + matematik + fizik);
         sonuc = toplam / 6.0;
-        //sonuc = (sonuc < 60) ? System.out.println("Sınıfı Geçti"): System.out.println("Sınıfta Kaldı") ;
         System.out.print("Derslerinizin ortalaması: " + sonuc);
+        System.out.println(sonuc > 60 ? " Sınıfı Geçti" : " Sınıfta Kaldı");
+
 
     }
 }
