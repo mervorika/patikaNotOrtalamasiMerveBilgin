@@ -28,6 +28,7 @@ public class dersOrtalamasiHesabiMerveBilgin {
 
         int toplam = (muzik + tarih + kimya + turkce + matematik + fizik);
         sonuc = toplam / 6.0;
+        //sonuc = (sonuc < 60) ? System.out.println("Sınıfı Geçti"): System.out.println("Sınıfta Kaldı") ;
         System.out.print("Derslerinizin ortalaması: " + sonuc);
 
     }
