@@ -1,5 +1,5 @@
 
-/*import java.util.Scanner;
+import java.util.Scanner;
 
 public class dordubKatiMerveBilgin {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class dordubKatiMerveBilgin {
             int sayi = scanner.nextInt();
 
             if (sayi % 2 == 1 ) {
-                break; // Kullanıcı 0 girdiğinde döngüyü sonlandır
+                break;
             }
 
             if (sayi % 2 == 0 && sayi % 4 == 0) {
@@ -24,4 +24,4 @@ public class dordubKatiMerveBilgin {
 
         scanner.close();
     }
-}*/
+}
