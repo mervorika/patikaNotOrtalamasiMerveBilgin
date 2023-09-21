@@ -1,14 +1,28 @@
-
-import java.util.Scanner;
-
+/*import java.util.Scanner;
 public class sinifiGecmeNotuMerveBilgin {
     public static void main(String[] args) {
+        // 0 - muzik, 1 - kimya, 2 - turkce, 3 - matematik, 4 - fizik;
+        String dersIsimleri[] = new String[] {"Müzik","Kimya", "Türkçe", "Matematik", "Fizik"};
+        //int dersNotlari[] = new int[] {0,0,0,0,0};
 
-        int muzik, kimya, turkce, matematik, fizik;
         String gecti, kaldi, durum;
         double sonuc;
 
         Scanner inp = new Scanner(System.in);
+        boolean hasAllFieldsGiven = false;
+        int dersIndex = 0;
+        int value = -1;
+        int validDersler = 0;
+        int validNotlarToplami = 0;
+        for ()
+                System.out.print(dersIsimleri[dersIndex]+" Notunuzu Giriniz: ");
+                value = inp.nextInt();
+                if (value >= 0 && value <= 100){ //valid
+                      validDersler++;
+                      validNotlarToplami += value;
+                }
+                dersIndex++;
+        }
 
         System.out.print("Müzik Notunuzu Giriniz: ");
         muzik = inp.nextInt();
@@ -38,3 +52,4 @@ public class sinifiGecmeNotuMerveBilgin {
 
     }
 }
+*/

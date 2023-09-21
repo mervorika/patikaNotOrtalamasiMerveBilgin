@@ -1,12 +1,20 @@
 import java.util.Scanner;
 public class havaSicakliginaGoreEtkinlik {
     public static void main(String[] args) {
-        int heat;
+        Scanner input = new Scanner(System.in);
 
-        Scanner inp = new Scanner(System.in);
-        System.out.print("Hava Sıcaklık Değerini Giriniz: ");
-        heat = inp.nextInt();
-       // System.out.println(heat <5 ? " Kayak yapabilirsiniz" : heat<25? heat<15? "Sinemaya gidebilirsin": heat>10? "Pikniğe gidebilirsiniz": );
+        int sicaklik;
+        System.out.print("Sıcaklık Giriniz:");
+        sicaklik = input.nextInt();
 
+
+        if (sicaklik < 5)
+            System.out.print("Kayak yapmalısın.");
+        else if (sicaklik >= 5 && sicaklik < 15)
+            System.out.print("Sinemaya gitmelisin");
+        else if (sicaklik >= 15 && sicaklik < 25)
+            System.out.print("Piknik yapmalısın.");
+        else
+            System.out.print("Yüzmeye gitmelisin.");
     }
 }
