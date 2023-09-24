@@ -1,4 +1,4 @@
-/*import java.util.Scanner;
+import java.util.Scanner;
 
 public class ucVeDordunKuvvetleriMerveBilgin {
     public static void main(String[] args) {
@@ -7,13 +7,13 @@ public class ucVeDordunKuvvetleriMerveBilgin {
         System.out.print("Sınır sayısını giriniz: ");
         n = input.nextInt();
 
-        for (int i = 1; i <= n; i++) {
-
-            if (i *=3 && i *=4){
-                System.out.println(i);
-            }
-
+        for (int i = 1; i <= n; i *=3) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        for (int i = 1; i <= n; i *=4) {
+            System.out.print(i + " ");
         }
 
     }
-}*/
+}
