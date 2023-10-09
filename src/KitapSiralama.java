@@ -64,7 +64,7 @@ public class KitapSiralama {
         bookSetByName.add(book4);
         bookSetByName.add(book5);
 
-    //bu treesette sayfa sayısına göre sıraldır.
+        //bu treesette sayfa sayısına göre sıraldır.
         TreeSet<Book> bookSetByPageCount = new TreeSet<>(Comparator.comparingInt(Book::getPageCount));
         bookSetByPageCount.addAll(bookSetByName);
 
