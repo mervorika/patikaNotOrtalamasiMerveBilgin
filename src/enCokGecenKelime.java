@@ -1,4 +1,3 @@
-
 import java.util.Arrays;
 import java.util.Map;
 import java.util.function.Function;
@@ -11,9 +10,9 @@ public class enCokGecenKelime {
 
         System.out.print("Metni girin: ");
         String metin = scanner.nextLine();
-
+        //Türkçe harfleri desteklemedi diye alttaki düzzenlemeyi yaptım harfleri görebilirsiniz ordaki.
         Map<String, Long> kelimeSayilari = Arrays.stream(metin.split("\\s+"))
-                .map(kelime -> kelime.replaceAll("[^a-zA-Z]", "").toLowerCase())
+                .map(kelime -> kelime.replaceAll("[^a-zA-ZçğıöşüÇĞİÖŞÜ]", "").toLowerCase())
                 .filter(kelime -> !kelime.isEmpty())
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
@@ -22,9 +21,10 @@ public class enCokGecenKelime {
                 .orElse(null);
 
         if (enCokGecenKelime != null) {
-            System.out.println("En çok geçen kelimeyi buldum: " + enCokGecenKelime.getKey() + " (" + enCokGecenKelime.getValue() + " kez)");
+            System.out.println("En çok geçen kelime şudur: " + enCokGecenKelime.getKey() + " (" + enCokGecenKelime.getValue() + " kez)");
         } else {
-            System.out.println("Herhangi bir kelime bulamadım.");
+            System.out.println("Herhangi bir kelime bulunamadı.");
         }
     }
 }
+
