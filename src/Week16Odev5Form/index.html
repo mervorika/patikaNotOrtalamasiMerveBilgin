@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uyelik Girisi</title>
+    <style>   
+        body {
+            background-color: rgb(220, 224, 230);
+            text-align: center;   
+        }
+    </style>
+</head>
+<body>
+    <h1><b> Üye Ol </b></h1>
+    <form >
+        <Table>
+            <tr>
+
+            </tr>
+        </Table>
+            
+            <!-- Text Input -->
+        <label for="fname">Ad:</label><br />
+        <input type="text" id="fname" name="fname" required /><br /> 
+
+        <label for="lname">Soyad:</label><br />
+        <input type="text" id="lname" name="lname" required /><br />  
+
+        <!-- Email Input -->
+        <label for="email">E-posta:</label><br />
+        <input type="email" id="email" name="email" required /><br /> 
+
+        <!-- Date Input -->
+        <label for="dob">Doğum tarihi:</label><br />
+        <input type="date" id="dob" name="dob" required /><br /> <br>
+
+        <!-- Password Input -->
+        <label for="pwd">Şifre:</label><br />
+        <input type="password" id="pwd" name="pwd" minlength="8" maxlength="30" required /><br /> <br>
+
+        <!-- Radio Button Input -->
+        <p>Cinsiyet:</p>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Erkek</label><br />
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Kadın</label><br /> <br>
+
+        <!-- Combobox Input -->
+        <label for="fruit">Favori Meyveniz :</label><br />
+        <select id="fruit" name="fruit">
+            <option value="Apple">Elma</option>
+            <option value="Banana">Muz</option>
+            <option value="Watermelon">Kavun</option></select
+        ><br /> <br>
+
+         <!-- Combobox Input -> Multiple -->
+         <label for="eat">Hangilerini Seversiniz :</label><br />
+         <select id="eat" name="eat" multiple>
+             <option value="meat">Et</option>
+             <option value="fruit">Meyve</option>
+             <option value="egg">Yumurta</option>
+             <option value="vegetable">Sebze</option>
+             <option value="bakery products">unlu Mamüller</option>
+             <option value="milk">Süt</option></select
+         ><br /> <br>
+
+         <!-- Textarea Input -->
+        <label for="message">Mesaj:</label><br />
+        <textarea id="message" name="message" rows="8" cols="70"></textarea><br />
+
+         <!-- Checkbox Input -->
+      <input type="checkbox" id="terms" name="terms" required />
+      <label for="terms">Robot Degilim</label><br /> <br>
+
+
+
+        <!-- Submit Button -->
+        <input type="submit" value="Gönder" />
+    </form>
+</body>
+</html>
+
